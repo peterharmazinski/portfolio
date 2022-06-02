@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  title: 'PH',
 }
 
 const about = {
@@ -9,7 +9,7 @@ const about = {
   name: 'Peter Harmazinski',
   role: 'Data Visualization, Analytics, and Web Developer',
   description:
-    "I have 8 years of experience enhancing data-driven decision-making through creation of Web applications, user-friendly dashboards, easy-to-maintain data workflows, risk identification, and unique solutions to business problems. I'm passionate about continuous improvement, accessibility, and helping people.",
+    "I design and developer enjoyable user experiences to enhance data-driven decision-making. I'm passionate about continuous improvement, accessibility, and helping people.",
   resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/peterharmazinski/',

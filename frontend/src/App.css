@@ -11,15 +11,21 @@
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
+  --shadow-color: 0deg 0% 50%;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow-lg: 1px 2px 2px hsl(var(--shadow-color) / 0.2),
+                2px 4px 4px hsl(var(--shadow-color) / 0.2),
+                4px 8px 8px hsl(var(--shadow-color) / 0.2),
+                8px 16px 16px hsl(var(--shadow-color) / 0.2),
+                16px 32px 32px hsl(var(--shadow-color) / 0.2);
 }
 
 .dark {
-  --clr-bg: #23283e;
+  --clr-bg: #222222;
   --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
+  --clr-fg: #E4E4E4;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-primary: #2978b5;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -79,6 +85,7 @@ main {
 
 .link--icon {
   color: var(--clr-fg);
+  fill: var(--clr-fg);
 }
 
 .btn {
@@ -92,8 +99,8 @@ main {
 }
 
 .btn--outline {
-  color: var(--clr-primary);
-  border: 2px solid var(--clr-primary);
+  color: var(--clr-primary) !important;
+  border: 2px solid var(--clr-primary) !important;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -101,7 +108,7 @@ main {
 
 .btn--outline:hover,
 .btn--outline:focus {
-  color: var(--clr-bg);
+  color: var(--clr-bg) !important;
 }
 
 .btn--outline:before {
