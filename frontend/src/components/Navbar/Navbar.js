@@ -38,22 +38,10 @@ const Navbar = () => {
               onClick={toggleNavList}
               className='link link--nav'
             >
-              Technical Skills
+              Skills
             </a>
           </li>
         ) : null}
-
-        {soft_skills.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#soft-skills'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Soft Skills
-            </a>
-          </li>
-        ) : null}   
 
         {contact.email ? (
           <li className='nav__list-item'>

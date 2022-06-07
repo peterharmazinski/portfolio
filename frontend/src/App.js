@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import { technical_skills, soft_skills } from './config'
 import './App.css'
+import Dashboard from './components/Dashboard/Dashboard/Dashboard'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
