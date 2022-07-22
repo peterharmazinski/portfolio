@@ -1,0 +1,18 @@
+.KPI {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    height: 90%;
+}
+
+.KPI-text {
+    font-size: 3em;
+    font-weight: bold;
+}

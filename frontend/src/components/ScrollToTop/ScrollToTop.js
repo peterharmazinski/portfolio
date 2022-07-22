@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import './ScrollToTop.css'
+import { HashLink } from 'react-router-hash-link'
+import { Box, IconButton } from '@mui/material'
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -14,11 +16,16 @@ const ScrollToTop = () => {
   }, [])
 
   return isVisible ? (
-    <div className='scroll-top'>
-      <a href='#top'>
-        <ArrowUpwardIcon fontSize='large' />
-      </a>
-    </div>
+    <Box className='scroll-top'>
+      <IconButton>
+      <HashLink
+        to='#top'
+        className='link link--nav'
+      >
+        <ArrowUpwardIcon fontSize='large' color='primary' />
+      </HashLink>
+      </IconButton>
+    </Box>
   ) : null
 }
 

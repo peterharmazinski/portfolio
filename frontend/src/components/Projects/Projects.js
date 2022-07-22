@@ -1,3 +1,4 @@
+import { Grid, Typography } from '@mui/material'
 import uniqid from 'uniqid'
 import { projects } from '../../config'
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
@@ -8,13 +9,13 @@ const Projects = () => {
 
   return (
     <section id='projects' className='section projects'>
-      <h2 className='section__title'>Projects</h2>
+      <Typography variant='h2' className='section__title'>Projects</Typography>
 
-      <div className='projects__grid'>
+      <Grid className='projects__grid'>
         {projects.map((project) => (
           <ProjectContainer key={uniqid()} project={project} />
         ))}
-      </div>
+      </Grid>
     </section>
   )
 }

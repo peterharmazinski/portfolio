@@ -1,0 +1,12 @@
+.DashboardCard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 4px;
+}
+
+
+
+.DashboardCard-kpiCard .DashboardCard-title {
+    text-align: center;
+}

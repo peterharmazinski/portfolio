@@ -1,20 +1,22 @@
+import { Box, Card, Grid, List, ListItem, Popover, Typography } from '@mui/material'
+import { useState } from 'react'
 import uniqid from 'uniqid'
+import { Skill } from './Skill'
 import './Skills.css'
 
 const Skills = (props) => {
+  
   if (!props.skills.length) return null
-
+  
   return (
-    <section className='section skills' id={props.title.toLowerCase() + '-skills'}>
-      <h2 className='section__title'>{props.title} Skills</h2>
-      <ul className='skills__list'>
+    <Box variant='section' id={props.title.toLowerCase() + '-skills'}>
+      <Typography variant='h3' sx={{textAlign: 'center', marginBottom: '.5em'}}>{props.title}</Typography>
+      <Grid className='skills__list'>
         {props.skills.map((skill) => (
-          <li key={uniqid()} className='skills__list-item btn btn--plain'>
-            {skill}
-          </li>
+          <Skill skill={skill}/>
         ))}
-      </ul>
-    </section>
+      </Grid>
+    </Box>
   )
 }
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">');
+
 .app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -6,7 +8,7 @@
 }
 
 .light {
-  --clr-bg: #fcfcfc;
+  --clr-bg: #e7ebf0;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
@@ -25,24 +27,23 @@
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #E4E4E4;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #2978b5;
+  --clr-primary: #57B6FF;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 main {
-  max-width: 1100px;
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .section {
-  margin-top: 5em;
+  margin-top: 15em;
 }
 
 .section__title {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
   text-transform: uppercase;
 }
 
@@ -51,17 +52,17 @@ main {
   align-items: center;
 }
 
-.link {
+.MuiLink-root {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
   position: relative;
 }
 
-.link:hover {
+.MuiLink-root:hover {
   color: var(--clr-primary);
 }
 
-.link::before {
+.MuiLink-root::before {
   content: '';
   display: inline;
   width: 0%;
@@ -72,8 +73,8 @@ main {
   transition: width 0.2s ease-in;
 }
 
-.link:hover::before,
-.link:focus::before {
+.MuiLink-root:hover::before,
+.MuiLink-root:focus::before {
   width: 100%;
 }
 

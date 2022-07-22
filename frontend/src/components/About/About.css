@@ -1,7 +1,17 @@
-.about {
+.about .div2 {
   flex-direction: column;
-  margin-top: 3em;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+  
+ .about .div1 { grid-area: 1 / 1 / 2 / 2; }
+ .about .div2 { grid-area: 1 / 2 / 2 / 3; }
 
 .about__name {
   color: var(--clr-primary);
@@ -22,16 +32,18 @@
   margin-top: 2.4em;
 }
 
+.about__contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4em;
+}
+
 .about .link--icon {
   margin-right: 0.8em;
 }
 
 .custom-icon {
   fill: red;
-}
-
-.about .btn--outline {
-  margin-right: 1em;
 }
 
 .react-pdf__Page__canvas {

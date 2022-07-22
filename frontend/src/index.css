@@ -3,7 +3,6 @@
   margin: 0;
   border: 0;
   outline: 0;
-  background-color: inherit;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -49,6 +48,11 @@ a {
 
 button {
   cursor: pointer;
+}
+
+body {
+  overflow-y: scroll !important;
+  padding: 0 !important;
 }
 
 @media (max-width: 900px) {

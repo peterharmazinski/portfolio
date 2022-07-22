@@ -1,5 +1,3 @@
-import { useContext } from 'react'
-import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
@@ -9,26 +7,28 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import { technical_skills, soft_skills } from './config'
 import './App.css'
-import Dashboard from './components/Dashboard/Dashboard/Dashboard'
+import { Box, Container, Paper, Typography } from '@mui/material'
 
 const App = () => {
-  const [{ themeName }] = useContext(ThemeContext)
-
+  
   return (
-    <div id='top' className={`${themeName} app`}>
+    <Paper id='top' className={`app`} sx={{bgcolor: 'background.default'}}>
       <Header />
 
-      <main>
+      <main>    
         <About />
         <Projects />
-        <Skills title={'Technical'} skills={technical_skills}/>
-        <Skills title={'Soft'} skills={soft_skills}/>
-        <Contact />
+        <section className='section skills'>
+          <Typography variant='h2' className='section__title'>Skills</Typography>
+          <Container sx={{display: 'flex', justifyContent: 'center'}}>
+            <Skills title={'Technical'} skills={technical_skills}/>
+            <Skills title={'Soft'} skills={soft_skills}/>
+          </Container>
+        </section>
       </main>
-
+      <Footer/>
       <ScrollToTop />
-      <Footer />
-    </div>
+    </Paper>
   )
 }
 

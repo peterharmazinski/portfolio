@@ -1,34 +1,49 @@
-import { createContext, useEffect, useState } from 'react'
+import { createContext, useEffect, useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
+import { createTheme, ThemeProvider} from "@mui/material/styles";
 
-const ThemeContext = createContext()
+export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
-const ThemeProvider = ({ children }) => {
-  const [themeName, setThemeName] = useState('light')
+export function CustomThemeProvider({ children }) {
+  const [mode, setMode] = useState('light');
+  const colorMode = useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+      },
+    }),
+    [],
+  );
 
-  useEffect(() => {
-    const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setThemeName(darkMediaQuery.matches ? 'dark' : 'light')
-    darkMediaQuery.addEventListener('change', (e) => {
-      setThemeName(e.matches ? 'dark' : 'light')
-    });
-  }, [])
-
-  const toggleTheme = () => {
-    const name = themeName === 'dark' ? 'light' : 'dark'
-    localStorage.setItem('themeName', name)
-    setThemeName(name)
-  }
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode,
+          ...(mode === 'light'
+            ? {
+                // palette values for light mode
+                
+                background: {
+                  default: '#ededed'
+                },
+              }
+            : {
+                // palette values for dark mode
+                
+                background: {
+                  default: '#111314',
+                  secondary: '#1b1e20'
+                }
+              }),
+        },
+      }));
 
   return (
-    <ThemeContext.Provider value={[{ themeName, toggleTheme }]}>
-      {children}
-    </ThemeContext.Provider>
-  )
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        { children }
+      </ThemeProvider>
+    </ColorModeContext.Provider>
+  );
 }
-
-ThemeProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export { ThemeProvider, ThemeContext }

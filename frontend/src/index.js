@@ -1,11 +1,24 @@
-import { render } from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client'
 import App from './App'
-import { ThemeProvider } from './contexts/theme'
+import { CustomThemeProvider } from './contexts/theme';
+import { HashRouter, Routes, Route } from "react-router-dom"
+import Dashboards from './routes/Dashboards'
 import './index.css'
 
-render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>,
+const root = ReactDOM.createRoot(
   document.getElementById('root')
-)
+);
+
+root.render(<React.StrictMode>
+<CustomThemeProvider>
+              <HashRouter>
+                  <Routes>
+                    <Route exact path="/" element={<App />} />
+                    
+                    <Route path="/dashboards" element={<Dashboards />} />
+                  </Routes>
+              </HashRouter>
+              </CustomThemeProvider>
+            </React.StrictMode>
+);
