@@ -1,8 +1,5 @@
 import uniqid from 'uniqid'
 import Card from '@mui/material/Card';
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LaunchIcon from '@mui/icons-material/Launch'
-import { Link } from "react-router-dom";
 import './ProjectContainer.css'
 import { CardMedia, Chip, Typography } from '@mui/material';
 
