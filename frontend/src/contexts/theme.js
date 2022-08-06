@@ -27,6 +27,9 @@ export function CustomThemeProvider({ children }) {
                 background: {
                   default: '#ededed'
                 },
+                text: {
+                  default: 'black'
+                }
               }
             : {
                 // palette values for dark mode
@@ -34,6 +37,9 @@ export function CustomThemeProvider({ children }) {
                 background: {
                   default: '#111314',
                   secondary: '#1b1e20'
+                },
+                text: {
+                  default: 'white'
                 }
               }),
         },

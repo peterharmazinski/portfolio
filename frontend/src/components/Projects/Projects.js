@@ -10,7 +10,6 @@ const Projects = () => {
   return (
     <section id='projects' className='section projects'>
       <Typography variant='h2' className='section__title'>Projects</Typography>
-
       <Grid className='projects__grid'>
         {projects.map((project) => (
           <ProjectContainer key={uniqid()} project={project} />

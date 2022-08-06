@@ -2,7 +2,7 @@ import { Card, Grid, List, ListItem, Popover, Typography } from '@mui/material'
 import { useRef, useState } from 'react'
 import uniqid from 'uniqid'
 
-export const Skill = ({skill}) => {
+export const Skill = ({skill, bgcolor}) => {
     const [anchorEl, setAnchorEl] = useState(null);
     const cardRef = useRef();
     const open = Boolean(anchorEl);
@@ -14,15 +14,14 @@ export const Skill = ({skill}) => {
     const handlePopoverClose = () => {
         setAnchorEl(null);
     };
-    
-    
 
     return <>
     <Card 
         ref={cardRef}
         key={skill.name} 
         className='skills__list-item btn btn--plain' 
-        sx={{boxShadow: 1, bgcolor: 'background.secondary'}}
+        bgcolor={bgcolor}
+        sx={{boxShadow: 1, bgcolor: `${bgcolor}`}}
         aria-owns={open ? 'mouse-over-popover' : undefined}
             aria-haspopup="true"
             onMouseEnter={handlePopoverOpen}

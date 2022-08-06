@@ -4,19 +4,16 @@ import uniqid from 'uniqid'
 import { Skill } from './Skill'
 import './Skills.css'
 
-const Skills = (props) => {
+const Skills = ({skills, title, bgcolor}) => {
   
-  if (!props.skills.length) return null
+  if (!skills.length) return null
   
   return (
-    <Box variant='section' id={props.title.toLowerCase() + '-skills'}>
-      <Typography variant='h3' sx={{textAlign: 'center', marginBottom: '.5em'}}>{props.title}</Typography>
-      <Grid className='skills__list'>
-        {props.skills.map((skill) => (
-          <Skill skill={skill}/>
+    <>
+        {skills.map((skill) => (
+          <Skill skill={skill} bgcolor={bgcolor}/>
         ))}
-      </Grid>
-    </Box>
+    </>
   )
 }
 

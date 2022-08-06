@@ -22,32 +22,103 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Foreign Refugee Immigration',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['Tableau', 'Dashboard', 'Business'],
+      'Interactive business-style dashboard that makes use of set actions to empower users to drill down with multiple combinations of year, country of origin, state, and city.',
+    stack: ['Tableau', 'Dashboard', 'Business-Style'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    image: 'foreign-refugees.png',
-    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/ForeignRefugeeImmigrationtotheUnitedStates2009-2018/ForeignRefugees'
+    image: 'https://public.tableau.com/static/images/Fo/ForeignRefugeeImmigrationtotheUnitedStates2009-2018/ForeignRefugees/4_3.png',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/ForeignRefugeeImmigrationtotheUnitedStates2009-2018/ForeignRefugees',
+    year: '2022'
   },
   {
-    name: 'Project 2',
+    name: 'Pokemon Metrics',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+    stack: ['Tableau', 'Dashboard', 'Business-Style'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    link: '/dashboards'
+    image: 'https://public.tableau.com/static/images/Po/PokemonInc_/1_PokemonComparison2/4_3.png',
+    link: '/dashboards',
+    year: '2022'
   },
   {
-    name: 'Project 3',
+    name: 'Comparing Designs',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+    stack: ['Tableau', 'Dashboard', 'Informative'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    link: '/dashboards'
+    image: 'https://public.tableau.com/static/images/Co/ComparingDashboardDesigns/Comparison/4_3.png',
+    link: '/dashboards',
+    year: '2022'
+  },
+  {
+    name: 'Viz for Social Good',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['Tableau', 'Dashboard', 'Volunteer'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'https://public.tableau.com/static/images/vf/vfsg/VFSG/4_3.png',
+    link: '/dashboards',
+    year: '2020'
+  },
+  {
+    name: 'Birth Defects',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['Tableau', 'Dashboard', 'Practice'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'https://public.tableau.com/static/images/Bi/BirthDefects/Dashboard1/4_3.png',
+    link: '/dashboards',
+    year: '2020'
+  },
+  {
+    name: '2019 SUV Comparison',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['Tableau', 'Dashboard', 'Degree'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'https://public.tableau.com/static/images/20/2019SUVComparison/Story1/4_3.png',
+    link: '/dashboards',
+    year: '2019'
+  },
+  {
+    name: 'Makeover Monday 2019.42',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['Tableau', 'Dashboard', 'Practice'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'https://public.tableau.com/static/images/Ma/MakeoverMonday-2019_42/Dashboard1/4_3.png',
+    link: '/dashboards',
+    year: '2019'
+  },
+  {
+    name: 'Tour de France',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['Tableau', 'Dashboard', 'Practice'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'https://public.tableau.com/static/images/To/TourdeFrance_15703005468110/Dashboard1/4_3.png',
+    link: '/dashboards',
+    year: '2019'
+  },
+  {
+    name: 'US Breweries',
+    description:
+      'I created this for fun and matched the colors to common beer colors. Key figures are enlarged for emphasis and to draw attention. I like to use this technique in tooltips when describing how a metric was calculated.',
+    stack: ['Tableau', 'Dashboard', 'Practice'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'https://public.tableau.com/static/images/U_/U_S_Breweries/Dashboard/4_3.png',
+    link: '/dashboards',
+    year: '2019'
   },
 ]
 

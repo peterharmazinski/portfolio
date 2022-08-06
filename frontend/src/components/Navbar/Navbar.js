@@ -41,7 +41,7 @@ const Navbar = () => {
           <ListItem className='nav__list-item'>
             <Typography>
               <HashLink
-                to='#technical-skills'
+                to='#skills'
                 onClick={toggleNavList}
                 className='link link--nav'
               >
