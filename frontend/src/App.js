@@ -33,6 +33,7 @@ const App = () => {
             <ToggleButton color='primary' value='technical' sx={{width: '125px'}}>Technical</ToggleButton>
             <ToggleButton color='secondary' value='soft' sx={{width: '125px'}}>Soft</ToggleButton>
           </ToggleButtonGroup>
+          <Typography sx={{textAlign: 'center'}}>Hover over skills to view more details</Typography>
           <Container sx={{display: 'flex', justifyContent: 'center'}}>
           <Grid className='skills__list'>
             { alignment.includes('technical') && (

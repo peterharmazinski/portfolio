@@ -15,7 +15,7 @@ const ProjectContainer = ({ project}) => {
         aria-label='live preview'><CardMedia
         component="img"
         height="200"
-        image={project.image}
+        image={project.stack.includes('Tableau') ? project.image : require(`../../${project.image}`)}
         //image='{require(`../../${project.image}`)}'
         alt="dashboard small image"
       />

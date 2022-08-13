@@ -35,56 +35,67 @@ const projects = [
   {
     name: 'Pokemon Metrics',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'I grew up with Pokemon and now my kids like Pokemon too, so this was an opportunity to use some fun data with a business-style design. I made use of set actions and collapsible containers. There\'s an opportunity to use parameter actions with the metrics, however I\'ve found that parameter actions performance is worse than a simple dropdown, which also has improved discoverable.',
     stack: ['Tableau', 'Dashboard', 'Business-Style'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/Po/PokemonInc_/1_PokemonComparison2/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/PokemonInc_/1_PokemonComparison2',
     year: '2022'
   },
   {
     name: 'Comparing Designs',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'The design of a dashboard can greatly affect it\s readbility and usability. This dashboard provides a contrast of two designs. On the left, color and light borders are used to differentiate and identify relationships between entities. For example, The Number of Facilities KPI is in the same card as the Growth by Year, indicating a relationship. Using a card design format for visualizations also aligns with common Web UI design best practices. On the right, it\'s difficult to identify the relationship between different visualizations.',
     stack: ['Tableau', 'Dashboard', 'Informative'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/Co/ComparingDashboardDesigns/Comparison/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/ComparingDashboardDesigns/Comparison',
     year: '2022'
   },
   {
     name: 'Viz for Social Good',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This was a volunteer project aimed at highlighting the accomplishments of the organizating and its top volunteers, while enabling new charitable organizations and volunteers to join.',
     stack: ['Tableau', 'Dashboard', 'Volunteer'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/vf/vfsg/VFSG/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/vfsg/VFSG',
     year: '2020'
   },
   {
     name: 'Birth Defects',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'I\'m always looking for ways to improve on dashboards designs. This dashboard was a way to try out various techniques: dark mode, pagination, filter actions, parameter actions, ',
     stack: ['Tableau', 'Dashboard', 'Practice'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/Bi/BirthDefects/Dashboard1/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/BirthDefects/Dashboard1',
+    year: '2020'
+  },
+  {
+    name: 'Customer Churn',
+    description:
+      'https://github.com/peterharmazinski/customer-churn/blob/master/machine_learning/customer_churn.ipynb',
+    stack: ['Data Science', 'Python', 'Modeling'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'customer_churn_preview.png',
+    link: 'https://github.com/peterharmazinski/customer-churn/blob/master/machine_learning/customer_churn.ipynb',
     year: '2020'
   },
   {
     name: '2019 SUV Comparison',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Master\'s degree project. I used Stories to break down the overall results and the 2 criteria. I used charts I normally wouldn\'t ',
     stack: ['Tableau', 'Dashboard', 'Degree'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/20/2019SUVComparison/Story1/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/2019SUVComparison/Story1',
     year: '2019'
   },
   {
@@ -95,7 +106,7 @@ const projects = [
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/Ma/MakeoverMonday-2019_42/Dashboard1/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/MakeoverMonday-2019_42/Dashboard1',
     year: '2019'
   },
   {
@@ -106,7 +117,7 @@ const projects = [
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/To/TourdeFrance_15703005468110/Dashboard1/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/TourdeFrance_15703005468110/Dashboard1',
     year: '2019'
   },
   {
@@ -117,7 +128,7 @@ const projects = [
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: 'https://public.tableau.com/static/images/U_/U_S_Breweries/Dashboard/4_3.png',
-    link: '/dashboards',
+    link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/U_S_Breweries/Dashboard',
     year: '2019'
   },
 ]

@@ -34,12 +34,11 @@
 
 .about__contact {
   display: flex;
-  justify-content: center;
   margin-top: 2.4em;
 }
 
 .about .link--icon {
-  margin-right: 0.8em;
+  margin-right: 16px;
 }
 
 .react-pdf__Page__canvas {
