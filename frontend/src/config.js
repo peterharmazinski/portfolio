@@ -46,7 +46,7 @@ const projects = [
   {
     name: 'Comparing Designs',
     description:
-      'The design of a dashboard can greatly affect it\s readbility and usability. This dashboard provides a contrast of two designs. On the left, color and light borders are used to differentiate and identify relationships between entities. For example, The Number of Facilities KPI is in the same card as the Growth by Year, indicating a relationship. Using a card design format for visualizations also aligns with common Web UI design best practices. On the right, it\'s difficult to identify the relationship between different visualizations.',
+      'The design of a dashboard can greatly affect it\'s readbility and usability. This dashboard provides a contrast of two designs. On the left, color and light borders are used to differentiate and identify relationships between entities. For example, The Number of Facilities KPI is in the same card as the Growth by Year, indicating a relationship. Using a card design format for visualizations also aligns with common Web UI design best practices. On the right, it\'s difficult to identify the relationship between different visualizations.',
     stack: ['Tableau', 'Dashboard', 'Informative'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
@@ -130,6 +130,36 @@ const projects = [
     image: 'https://public.tableau.com/static/images/U_/U_S_Breweries/Dashboard/4_3.png',
     link: 'https://public.tableau.com/app/profile/peter.harmazinski/viz/U_S_Breweries/Dashboard',
     year: '2019'
+  },
+  {
+    name: 'Fandango Scores',
+    description: '',
+    stack: [''],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: '',
+    link: 'https://github.com/peterharmazinski/fandango-scores/blob/master/fandango_scores.ipynb',
+    year: '2019'
+  },
+  {
+    name: 'Web Scraper',
+    description: '',
+    stack: [''],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: '',
+    link: 'https://github.com/peterharmazinski/us-census-bureau-web-scraper/blob/main/c996_project.ipynb',
+    year: '2019'
+  },
+  {
+    name: 'Covid-19 Twitter Sentiment',
+    description: '',
+    stack: [''],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: '',
+    link: 'https://github.com/peterharmazinski/masters-capstone/blob/main/capstone.ipynb',
+    year: '2020'
   },
 ]
 
