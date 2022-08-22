@@ -83,7 +83,7 @@ const About = () => {
       </div>
       </div>
       <div className='div2' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
-      <Avatar alt="Peter Harmazinski" src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: '350px', width: '350px' }} />
+      <Avatar id='hero-image' alt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: '350px', width: '350px' }} />
       </div>
     </div>
   )

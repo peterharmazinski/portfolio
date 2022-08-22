@@ -101,7 +101,7 @@ const projects = [
   {
     name: 'Makeover Monday 2019.42',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Rather than normal bars I used icons and made the colors match the color of the specific olympic medal.',
     stack: ['Tableau', 'Dashboard', 'Practice'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
@@ -112,7 +112,7 @@ const projects = [
   {
     name: 'Tour de France',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'In this dashboard I used a popular dataset to practice using sentences with multiple visualizations to help readers better understand the insights.',
     stack: ['Tableau', 'Dashboard', 'Practice'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
@@ -133,18 +133,18 @@ const projects = [
   },
   {
     name: 'Fandango Scores',
-    description: '',
-    stack: [''],
+    description: 'An analysis of how Fandango scores changed after a critical article was published accusing it\'s rating system of bias.',
+    stack: ['Statistics', 'Python', 'Analysis'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    image: '',
+    image: 'fandango_preview.png',
     link: 'https://github.com/peterharmazinski/fandango-scores/blob/master/fandango_scores.ipynb',
     year: '2019'
   },
   {
     name: 'Web Scraper',
-    description: '',
-    stack: [''],
+    description: 'A web scraping project I developed during my Master\'s degree. It retrieves links from the US Census Bureau website.',
+    stack: ['Data Science', 'Python', 'Web Scrape'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
     image: '',
@@ -153,11 +153,11 @@ const projects = [
   },
   {
     name: 'Covid-19 Twitter Sentiment',
-    description: '',
-    stack: [''],
+    description: 'This was the capstone project for my Master\'s degree. This project combine sentiment analysis and modeling.',
+    stack: ['Data Science', 'Python', 'Modeling'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    image: '',
+    image: 'covid_twitter_sentiment_preview.png',
     link: 'https://github.com/peterharmazinski/masters-capstone/blob/main/capstone.ipynb',
     year: '2020'
   },

@@ -23,11 +23,11 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size:calc(24px + 4vw) !important;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size:calc(20px + 2vw) !important;
 }
 
 h3 {

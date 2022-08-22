@@ -20,7 +20,7 @@ const App = () => {
     <Paper id='top' className={`app`} sx={{bgcolor: 'background.default'}}>
       <Header />
 
-      <main>    
+      <Box  component='main' sx={{ flexGrow: 1, p: 3 }}>    
         <About />
         <Projects />
         <section className='section skills' id='skills' style={{minHeight: '100vh'}}>
@@ -45,7 +45,7 @@ const App = () => {
             </Grid>
           </Container>
         </section>
-      </main>
+      </Box>
       <Footer/>
       <ScrollToTop />
     </Paper>

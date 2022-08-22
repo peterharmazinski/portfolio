@@ -23,7 +23,7 @@
 }
 
 .about__desc {
-  font-size: 1rem;
+  font-size:calc(16px + .5vw) !important;
   max-width: 600px;
 }
 
@@ -49,9 +49,13 @@
 
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .app .about {
     align-items: flex-start;
     margin-top: 2em;
+  }
+  #hero-image {
+    display: none !important;
   }
 }
