@@ -2,15 +2,22 @@
   flex-direction: column;
 }
 
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .about {
+  margin: 0 auto;
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
   
- .about .div1 { grid-area: 1 / 1 / 2 / 2; }
+ .about .div1 { grid-area: auto; }
  .about .div2 { grid-area: 1 / 2 / 2 / 3; }
 
 .about__name {
@@ -50,12 +57,30 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .app .about {
     align-items: flex-start;
     margin-top: 2em;
   }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+  }
+  
   #hero-image {
     display: none !important;
   }
+
+  .about--secondary-text {
+    display: none;
+  }
+
+  .about--secondary-icon > * {
+    margin: 0 !important;
+  }
+
 }

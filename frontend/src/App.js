@@ -9,19 +9,24 @@ import { technical_skills, soft_skills } from './config'
 import './App.css'
 import { Box, Container, Grid, Paper, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
 import { useState } from 'react'
+import Modal from './components/Modal/Modal'
 
 const App = () => {
-  const [alignment, setAlignment] = useState(['technical', 'soft']);
+  // Modal
+  const [modalOpen, setModalOpen] = useState(false);
+  const toggleModal = () => setModalOpen(!modalOpen);
 
+  const [alignment, setAlignment] = useState(['technical', 'soft']);
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
   };
+
   return (
     <Paper id='top' className={`app`} sx={{bgcolor: 'background.default'}}>
-      <Header />
+      <Header modalOpen={modalOpen} toggleModal={toggleModal} />
 
-      <Box  component='main' sx={{ flexGrow: 1, p: 3 }}>    
-        <About />
+      <Box  component='main' sx={{ flexGrow: 1, p: 0 }}>    
+        <About modalOpen={modalOpen} toggleModal={toggleModal}/>
         <Projects />
         <section className='section skills' id='skills' style={{minHeight: '100vh'}}>
           <Typography variant='h2' className='section__title'>Skills</Typography>
@@ -48,6 +53,7 @@ const App = () => {
       </Box>
       <Footer/>
       <ScrollToTop />
+      <Modal modalOpen={modalOpen} toggleModal={toggleModal}/>
     </Paper>
   )
 }

@@ -9,7 +9,7 @@ const about = {
   name: 'Peter Harmazinski',
   role: 'Data Visualization, Analytics, and Web Developer',
   description:
-    "I design and develop enjoyable user experiences to enhance data-driven decision-making. I'm passionate about continuous improvement, accessibility, and helping people.",
+    "I gather, transform, and visualize data into consumable information to empower users to make data-driven decisions with minimal user effort. To translate: <b>I make people's lives easier with data.</b> I'm always looking to improve, help people, and provide a fantastic user experience.",
   resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/peterharmazinski/',
@@ -147,7 +147,7 @@ const projects = [
     stack: ['Data Science', 'Python', 'Web Scrape'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    image: '',
+    image: 'web_scrape_preview.png',
     link: 'https://github.com/peterharmazinski/us-census-bureau-web-scraper/blob/main/c996_project.ipynb',
     year: '2019'
   },

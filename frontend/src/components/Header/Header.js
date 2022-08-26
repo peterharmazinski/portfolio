@@ -4,12 +4,12 @@ import MiniDrawer from '../MiniDrawer/MiniDrawer'
 import Navbar from '../Navbar/Navbar'
 import './Header.css'
 
-const Header = ({ title }) => {
+const Header = ({ modalOpen, toggleModal }) => {
   const { homepage, logo } = header
 
   return (
 
-      <MiniDrawer logo={logo}/>
+      <MiniDrawer logo={logo} modalOpen={modalOpen} toggleModal={toggleModal}/>
 
   )
 }
