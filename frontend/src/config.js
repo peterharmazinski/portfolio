@@ -24,7 +24,7 @@ const projects = [
   {
     name: 'Foreign Refugee Immigration',
     description:
-      'Interactive business-style dashboard that makes use of set actions to empower users to drill down with multiple combinations of year, country of origin, state, and city.',
+      'With this wars around the world causing multiple refugee crises, this timely interactive business-style dashboard makes use of set actions to empower users to drill down with multiple combinations of year, country of origin, state, and city.',
     stack: ['Tableau', 'Dashboard', 'Business-Style'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
@@ -161,6 +161,26 @@ const projects = [
     link: 'https://github.com/peterharmazinski/masters-capstone/blob/main/capstone.ipynb',
     year: '2020'
   },
+  {
+    name: 'Starry Night',
+    description: 'I\'ve always been fascinated by space. This was inspired by some digital art I saw online of the nigth sky. The stars appear at random so each time you load the page, you\'ll see a different sky.',
+    stack: ['Web Dev', 'Art', 'Fun'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'starry_night_preview.png',
+    link: 'https://codepen.io/peteski/pen/YQymVE',
+    year: '2018'
+  },
+  {
+    name: 'Young Knight',
+    description: 'I wanted to see if I could make a picture with just HTML and CSS. At the end I decided to add a little bit of fun by making the knight "blink" using JavaScript.',
+    stack: ['Web Dev', 'Art', 'Fun'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+    image: 'young_knight_preview.png',
+    link: 'https://codepen.io/peteski/pen/ZeXvaO',
+    year: '2018'
+  },
 ]
 
 const technical_skills = [
@@ -171,7 +191,7 @@ const technical_skills = [
     description: 'I\'ve mentored others and created/maintained an internal Cigna Tableau chat to improve firmwide collaboration and idea-sharing.'
   },{
     name: 'SQL',
-    description: ''
+    description: 'I use SQL daily to prepare data and debug data sources. I break my code up into smaller pieces and comment it to ensure in\'s readable and understandable.'
   },{
     name: 'Cassandra',
     description: 'I designed Cassandra tables and queries to replace relational tables, reducing overall query time.'
@@ -185,6 +205,9 @@ const technical_skills = [
     name: 'React',
     description: 'I started working with React as a Web developer with JPMorgan Markets. After that I used it to create a reusable library of dashboard components reducing development time by 50%. This portfolio is made with React.'
   },{
+    name: 'Node.js',
+    description: ''
+  },{
     name: 'HTML',
     description: 'Use semantic HTML to make your code easier to understand and improve accessibility.'
   },{
@@ -196,6 +219,15 @@ const technical_skills = [
   },{
     name: 'Java',
     description: 'Java was my first programming language. I took a basic Java class in college, found a Java mentor, became certified, and obtained a Web Developer role, where I used Java object-oriented programming to migrate from Oracle data access objects to Cassandra, then make that data available through APIs.'
+  },{
+    name: 'Git',
+    description: ''
+  },{
+    name: 'SharePoint',
+    description: ''
+  },{
+    name: 'Confluence',
+    description: ''
   }
 ]
 
@@ -213,16 +245,16 @@ const soft_skills = [
     description: 'I\'m always looking for ways to improve processes and improve myself.'
   },{
     name: 'Training',
-    description: ''
+    description: 'I enjoy training others and sharing what I\'ve learned. I\'ve trained team members in requirements gather, Tableau development, dashboard design, debugging, report maintenance and Web development.'
   },{
     name: 'Mentoring',
-    description: ''
+    description: 'I enjoy mentoring others. I\'ve helped several people change careers and get into analytics and Web development.'
   },{
     name: 'Critical Thinking',
-    description: ''
+    description: 'I use critical thinking on a daily basis for everything from designing efficient SQL to assessing stakeholder needs to creating intake forms that encourage the best user input possible.'
   },{
     name: 'Design Thinking',
-    description: ''
+    description: 'Dashboards are not one size fits all. Dashboards should be designed to be reusable by multiple teams but also designed to empower users to take specific actions based on the data. Finding this balance makes an effective dashboard.'
   },{
     name: 'Resourceful',
     description: ''
@@ -234,13 +266,13 @@ const soft_skills = [
     description: ''
   },{
     name: 'Empathy',
-    description: ''
+    description: 'Empathy drives me to provide a great experience for stakeholders and users.'
   },{
     name: 'Strategic Planning',
     description: ''
   },{
     name: 'Building Relationships',
-    description: ''
+    description: 'I always strive to build relationships by helping the people around me. I\'ve often found people refer others to me for help with their technology needs.'
   }
 ]
 

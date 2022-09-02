@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import MiniDrawerListItem from './MiniDrawerListItem';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
@@ -8,9 +8,13 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import SvgIcon from '@mui/material/SvgIcon';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import { Avatar } from '@mui/material';
+import { Avatar, IconButton, ListItem } from '@mui/material';
 import ProfilePicture from '../../profile_picture.jpg';
 import { about } from '../../config';
+import { ColorModeContext } from '../../contexts/theme';
+import { useTheme } from '@mui/material/styles';
+import LightMode from '@mui/icons-material/LightMode';
+import DarkMode from '@mui/icons-material/DarkMode';
 
 export default function MiniDrawerList({toggleModal}) {
     const [isVisible, setIsVisible] = useState(false)
@@ -23,11 +27,14 @@ export default function MiniDrawerList({toggleModal}) {
         return () => window.removeEventListener('scroll', toggleVisibility)
     }, [])
 
+    const theme = useTheme();
+    const colorMode = useContext(ColorModeContext);
+
     return (
         <>
             <List>
                 { isVisible && (<MiniDrawerListItem text='Home' href='#' open='open' >
-                    <Avatar ialt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: '24px', width: '24px' }} />
+                    <Avatar ialt='Peter Harmazinski' src={ProfilePicture} style={{ height: '24px', width: '24px' }} />
                 </MiniDrawerListItem>) }
                 <MiniDrawerListItem text='Projects' href='#projects' open='open' >
                     <WorkIcon />
@@ -36,7 +43,7 @@ export default function MiniDrawerList({toggleModal}) {
                     <SportsMartialArtsIcon />
                 </MiniDrawerListItem>
             </List>
-            <Divider />
+            <Divider sx={{backgroundColor: 'lightgray'}}/>
             <List>
                 <MiniDrawerListItem text='LinkedIn' href='/' externalHref={about.social.linkedin} open='open' >
                     <LinkedInIcon />
@@ -51,6 +58,12 @@ export default function MiniDrawerList({toggleModal}) {
                 </MiniDrawerListItem>
                 <MiniDrawerListItem text='GitHub' href={about.social.github} open='open' >
                     <GitHubIcon />
+                </MiniDrawerListItem>
+            </List>
+            <Divider sx={{backgroundColor: 'lightgray'}}/>
+            <List>
+                <MiniDrawerListItem text='Mode' href={'javascript:void(0)'} open='open' onClick={colorMode.toggleColorMode}>
+                    {theme.palette.mode === 'dark' ? <DarkMode /> : <LightMode />}
                 </MiniDrawerListItem>
             </List>
         </>

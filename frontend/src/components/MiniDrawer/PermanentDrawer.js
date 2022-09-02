@@ -3,8 +3,9 @@ import MuiDrawer from '@mui/material/Drawer';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import MenuIcon from '@mui/icons-material/Menu';
 
-export default function PermanentDrawer({drawerWidth, children, open, handleDrawerClose, DrawerHeader}) {
+export default function PermanentDrawer({drawerWidth, children, open, handleDrawerOpen, handleDrawerClose, DrawerHeader}) {
     const theme = useTheme();
 
     const openedMixin = (theme) => ({
@@ -50,11 +51,28 @@ export default function PermanentDrawer({drawerWidth, children, open, handleDraw
     return (
         <Drawer className='permanent-drawer' variant="permanent" open={open} PaperProps={{sx: {borderRight: 'solid 1px lightgray'}}}>
             <DrawerHeader>
-            <IconButton onClick={handleDrawerClose}>
-                <ChevronLeftIcon />
-            </IconButton>
+                { !open ? (
+                    <IconButton
+         
+                    aria-label="open drawer"
+                    onClick={handleDrawerOpen}
+                    edge="start"
+                    sx={{
+                      ...(open && { display: 'none' }),
+                      minHeight: 48,
+                            justifyContent: 'center',
+                            px: 1.5,
+                    }}
+                  >
+                    <MenuIcon  />
+                  </IconButton>
+                ) : (
+                <IconButton onClick={handleDrawerClose}>
+                    <ChevronLeftIcon />
+                </IconButton>
+                )}
             </DrawerHeader>
-            <Divider />
+            <Divider sx={{backgroundColor: 'lightgray'}} />
             {children}
         </Drawer>
       );

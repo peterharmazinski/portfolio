@@ -1,3 +1,7 @@
+.about .div1 {
+  width: 95%;
+}
+
 .about .div2 {
   flex-direction: column;
 }
@@ -19,6 +23,13 @@ section {
   
  .about .div1 { grid-area: auto; }
  .about .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+.about .hero {
+  margin-bottom: 24px;
+}
+#hero-image-small {
+  display: none !important;
+} 
 
 .about__name {
   color: var(--clr-primary);
@@ -55,8 +66,6 @@ section {
 }
 
 
-
-
 @media (max-width: 1150px) {
   .app .about {
     align-items: flex-start;
@@ -65,6 +74,7 @@ section {
 
   .about {
     grid-template-columns: 1fr;
+    margin-left: 20%;
   }
 
   .hero {
@@ -82,5 +92,28 @@ section {
   .about--secondary-icon > * {
     margin: 0 !important;
   }
+  
+  #hero-image-small {
+    display: block !important;
+  }
 
+  .about .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .about .div3 { grid-area: 1 / 1 / 1 / 1; }
+    .about .div4 { grid-area: 1 / 2 / 1 / 2; }
+    .about .div5 { grid-area: 2 / 1 / 2 / 3; }
+    .about .div6 { grid-area: 1 / 4 / 3 / 5; }
+
+}
+
+@media (max-width: 900px) {
+  .about {
+    margin: 0 auto;
+  }
 }

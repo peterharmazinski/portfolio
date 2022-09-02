@@ -144,13 +144,16 @@ main {
   transform: translateY(-5px);
 }
 
-.MuiButton-outlined {
-  background-color: white !important;
+.MuiButton-root {
+  height: 48px;
 }
 
-@media (max-width: 600px) {
-  .section {
-    margin-top: 4em;
-  }
+.menu-icon-mobile {
+  display: none !important;
+}
 
+@media (max-width: 900px) {
+  .menu-icon-mobile {
+    display: block !important;
+  }
 }
