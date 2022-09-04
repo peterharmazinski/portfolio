@@ -206,10 +206,10 @@ const technical_skills = [
     description: 'I started working with React as a Web developer with JPMorgan Markets. After that I used it to create a reusable library of dashboard components reducing development time by 50%. This portfolio is made with React.'
   },{
     name: 'Node.js',
-    description: ''
+    description: 'To improve resiliencey and maintainability I chose Node.js as the backend language for my Web dashboards. That way any new developers would only need to learn a single language.'
   },{
     name: 'HTML',
-    description: 'Use semantic HTML to make your code easier to understand and improve accessibility.'
+    description: 'I use semantic HTML to make my code easier to understand and improve accessibility.'
   },{
     name: 'CSS',
     description: 'I\'ve used CSS and SASS. I find styling websites fun as it satisfies my artistic side.'
@@ -221,13 +221,13 @@ const technical_skills = [
     description: 'Java was my first programming language. I took a basic Java class in college, found a Java mentor, became certified, and obtained a Web Developer role, where I used Java object-oriented programming to migrate from Oracle data access objects to Cassandra, then make that data available through APIs.'
   },{
     name: 'Git',
-    description: ''
+    description: 'From Web development to SQL development, Git is very helpful for code reviews to ensure the team has the opportunity to understand the code, suggest improvements, and identify potential defects before they become production incidents.'
   },{
     name: 'SharePoint',
-    description: ''
+    description: 'I have extensive experience with SharePoint lists and forms. When hosting a server or database for Web dashboards was prohibitive, I used Node.js and Alteryx to store data in SharePoint lists, join that data to user input SharePoint lists, and a SharePoint page to display React dashboards.'
   },{
     name: 'Confluence',
-    description: ''
+    description: 'I enjoy using Confluence to document processes, debugging steps, and store Balsamiq wireframes. I\'ve seen others created complicated Confluences pages that are confusing to make changes to, so I keep them simple with a proper heading hierarchy, table of contents, and highlighting key information.'
   }
 ]
 
@@ -236,7 +236,7 @@ const soft_skills = [
   // if there are no skills, Skills section won't show up
   {
     name: 'Leadership',
-    description: ''
+    description: 'Leadership can be upwards, sideways, or downwards. I lead in all directions by doing my work well, making helpful recommendations to my leadership and peers, and helping everyone I can.'
   },{
     name: 'Requirements Gathering',
     description: 'I work closely with stakeholders to identify user needs.'
@@ -257,28 +257,23 @@ const soft_skills = [
     description: 'Dashboards are not one size fits all. Dashboards should be designed to be reusable by multiple teams but also designed to empower users to take specific actions based on the data. Finding this balance makes an effective dashboard.'
   },{
     name: 'Resourceful',
-    description: ''
+    description: 'I am always looking for ways to overcome obstacles that inhibit work. When I needed to spend hours manually maintaining VBA reports that were error prone, Tableau and server hosting was too expensive. So I developed Web dashboards, hosted on a SharePoint page, with a Node.js ETL workflow.'
   },{
     name: 'Humorous',
-    description: ''
+    description: 'I\'ve found that tasteful humor brings people together, lighten moods, and creates a positive atmosphere. This is especially essential when working remote where it can be more difficult to make a connection and people may not be upfront about expressing their loneliness.'
   },{
     name: 'Teamwork',
-    description: ''
+    description: 'I work with my teammates on a daily basis to help them and ask their help in improving my work. Silos don\'t help anyone, so we should engage with others to produce the greatest product possible.'
   },{
     name: 'Empathy',
     description: 'Empathy drives me to provide a great experience for stakeholders and users.'
   },{
     name: 'Strategic Planning',
-    description: ''
+    description: 'I plan strategically by breaking problems down into smaller pieces, consulting with team members, and identifying the resources that should own the work. From dashboard development to capacity planning to database migration, small- and large-scale work can be made more successful by identifying logical work units.'
   },{
     name: 'Building Relationships',
     description: 'I always strive to build relationships by helping the people around me. I\'ve often found people refer others to me for help with their technology needs.'
   }
 ]
 
-const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'pharmazinski@gmail.com',
-}
-
-export { header, about, projects, technical_skills, soft_skills, contact }
+export { header, about, projects, technical_skills, soft_skills }
