@@ -79,7 +79,7 @@ const projects = [
   {
     name: 'Customer Churn',
     description:
-      'https://github.com/peterharmazinski/customer-churn/blob/master/machine_learning/customer_churn.ipynb',
+      'This was a project for my Master\'s degree. I engineered the features and compared SVM, Logistic Regression, and Random Forest models to find the optimal model.',
     stack: ['Data Science', 'Python', 'Modeling'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
