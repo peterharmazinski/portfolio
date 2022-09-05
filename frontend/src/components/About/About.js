@@ -19,7 +19,7 @@ const About = ({modalOpen, toggleModal}) => {
       <div className='div1'>
       {name && (
         <Typography variant='h1' className='center hero parent' style={{ whiteSpace: 'pre' }}>
-          <span classname='div3'>Hi, I'm&nbsp;</span>
+          <span className='div3'>Hi, I'm&nbsp;</span>
           <Typography className='about__name div4' component='span' color='primary' style={{fontSize: 'inherit'}}>Peter&nbsp;</Typography>
           <Typography className='about__name div5' component='span' color='primary' style={{fontSize: 'inherit'}}>Harmazinski</Typography>
           <Avatar id='hero-image-small' className='div6' alt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: 'calc(40px + 10vw)', width: 'calc(40px + 10vw)' }} />
