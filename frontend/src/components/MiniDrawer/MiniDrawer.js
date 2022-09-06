@@ -71,12 +71,13 @@ export default function MiniDrawer({logo, modalOpen, toggleModal}) {
            minHeight: 48,
                  justifyContent: 'center',
                  px: 1.5,
+                 position: 'fixed'
          }}
          className='menu-icon-mobile'
        >
          <MenuIcon  />
        </IconButton>
-          <Typography variant='h4' component='div' sx={{ flexGrow: 1 }}  color='primary'>
+          <Typography variant='h4' component='div' sx={{ flexGrow: 1 }}  color='primary' className='logo'>
               {logo}
             </Typography>
         </Toolbar>

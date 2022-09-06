@@ -156,4 +156,8 @@ main {
   .menu-icon-mobile {
     display: block !important;
   }
+
+  .logo {
+    margin-left: 50px !important;
+  }
 }
