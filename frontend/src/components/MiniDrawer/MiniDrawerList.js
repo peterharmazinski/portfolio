@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import {useContext } from 'react'
 import MiniDrawerListItem from './MiniDrawerListItem';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
@@ -15,27 +15,16 @@ import { ColorModeContext } from '../../contexts/theme';
 import { useTheme } from '@mui/material/styles';
 import LightMode from '@mui/icons-material/LightMode';
 import DarkMode from '@mui/icons-material/DarkMode';
+import MiniProfileIcon from './MiniProfileIcon';
+import ToggleColorIcon from './ToggleColorIcon';
 
 export default function MiniDrawerList({toggleModal}) {
-    const [isVisible, setIsVisible] = useState(false)
-
-    useEffect(() => {
-        const toggleVisibility = () =>
-        window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false)
-
-        window.addEventListener('scroll', toggleVisibility)
-        return () => window.removeEventListener('scroll', toggleVisibility)
-    }, [])
-
-    const theme = useTheme();
-    const colorMode = useContext(ColorModeContext);
+    
 
     return (
         <>
             <List>
-                { isVisible && (<MiniDrawerListItem text='Home' href='#' open='open' >
-                    <Avatar ialt='Peter Harmazinski' src={ProfilePicture} style={{ height: '24px', width: '24px' }} />
-                </MiniDrawerListItem>) }
+                <MiniProfileIcon/>
                 <MiniDrawerListItem text='Projects' href='#projects' open='open' >
                     <WorkIcon />
                 </MiniDrawerListItem>
@@ -62,9 +51,7 @@ export default function MiniDrawerList({toggleModal}) {
             </List>
             <Divider sx={{backgroundColor: 'lightgray'}}/>
             <List>
-                <MiniDrawerListItem text='Mode' href={'javascript:void(0)'} open='open' onClick={colorMode.toggleColorMode}>
-                    {theme.palette.mode === 'dark' ? <DarkMode /> : <LightMode />}
-                </MiniDrawerListItem>
+                <ToggleColorIcon/>
             </List>
         </>
     );

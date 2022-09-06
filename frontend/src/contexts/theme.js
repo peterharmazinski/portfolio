@@ -8,8 +8,9 @@ export function CustomThemeProvider({ children }) {
   const [mode, setMode] = useState('light');
   const colorMode = useMemo(
     () => ({
-      toggleColorMode: () => {
+      toggleColorMode: (e) => {
         setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+        e.preventDefault();
       },
     }),
     [],
