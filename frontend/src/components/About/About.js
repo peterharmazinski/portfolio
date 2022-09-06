@@ -22,7 +22,7 @@ const About = ({modalOpen, toggleModal}) => {
           <span className='div3'>Hi, I'm&nbsp;</span>
           <Typography className='about__name div4' component='span' color='primary' style={{fontSize: 'inherit'}}>Peter&nbsp;</Typography>
           <Typography className='about__name div5' component='span' color='primary' style={{fontSize: 'inherit'}}>Harmazinski</Typography>
-          <Avatar id='hero-image-small' className='div6' alt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: 'calc(40px + 10vw)', width: 'calc(40px + 10vw)' }} />
+          <Avatar id='hero-image-small' className='div6' alt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: 'calc(40px + 10vw)', width: 'calc(40px + 10vw)' , margin: '0 15px 0 5px'}} />
         </Typography>
       )}
 
@@ -30,12 +30,12 @@ const About = ({modalOpen, toggleModal}) => {
       <Typography className='about__desc' style={{margin: '25px 0 0 0'}} dangerouslySetInnerHTML={{__html: description}}></Typography>
       <div className='about__contact'>
 
-        <Button startIcon={<LinkedInIcon/>} variant='contained' href={social.linkedin} aria-label='linkedin' className='link--icon'>
-          Connect&nbsp;<span className='about--secondary-text'> on LinkedIn</span>
+        <Button startIcon={<LinkedInIcon/>} variant='contained' href={social.linkedin} aria-label='linkedin' className='link--icon about--primary-icon'>
+          <span className='about--primary-text'>Connect&nbsp;<span className='about--secondary-text'> on LinkedIn</span></span>
         </Button>
 
-        <Button startIcon={<PictureAsPdfIcon />} onClick={() => toggleModal()} variant='outlined' type='button' className='link--icon'>
-          Resume
+        <Button startIcon={<PictureAsPdfIcon />} onClick={() => toggleModal()} variant='outlined' type='button' className='link--icon about--secondary-icon'>
+          <span className='about--secondary-text'>Resume</span>
         </Button>
 
         <Button variant='outlined' href={social.tableau} aria-label='tableau' className='link--icon about--secondary-icon'

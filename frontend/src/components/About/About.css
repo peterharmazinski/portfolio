@@ -1,5 +1,6 @@
 .about .div1 {
-  width: 95%;
+  max-width: 80vw;
+  padding-left: 10vw;
 }
 
 .about .div2 {
@@ -13,12 +14,12 @@ section {
 
 .about {
   margin: 0 auto;
-  width: 80%;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  
 }
   
  .about .div1 { grid-area: auto; }
@@ -74,7 +75,6 @@ section {
 
   .about {
     grid-template-columns: 1fr;
-    margin-left: 20%;
   }
 
   .hero {
@@ -110,10 +110,28 @@ section {
     .about .div5 { grid-area: 2 / 1 / 2 / 3; }
     .about .div6 { grid-area: 1 / 4 / 3 / 5; }
 
+    .about .div1 {
+      max-width: 80vw;
+      margin: 0 5vw;
+    }
 }
 
 @media (max-width: 900px) {
   .about {
     margin: 0 auto;
+  }
+
+  .about .div1 {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .about--primary-text {
+    display: none;
+  }
+
+  .about--primary-icon > * {
+    margin: 0 !important;
   }
 }
