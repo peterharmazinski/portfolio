@@ -1,4 +1,3 @@
-import {useContext } from 'react'
 import MiniDrawerListItem from './MiniDrawerListItem';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
@@ -8,13 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import SvgIcon from '@mui/material/SvgIcon';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import { Avatar, IconButton, ListItem } from '@mui/material';
-import ProfilePicture from '../../profile_picture.jpg';
 import { about } from '../../config';
-import { ColorModeContext } from '../../contexts/theme';
-import { useTheme } from '@mui/material/styles';
-import LightMode from '@mui/icons-material/LightMode';
-import DarkMode from '@mui/icons-material/DarkMode';
 import MiniProfileIcon from './MiniProfileIcon';
 import ToggleColorIcon from './ToggleColorIcon';
 
@@ -37,7 +30,7 @@ export default function MiniDrawerList({toggleModal}) {
                 <MiniDrawerListItem text='LinkedIn' href='/' externalHref={about.social.linkedin} open='open' >
                     <LinkedInIcon />
                 </MiniDrawerListItem>
-                <MiniDrawerListItem text='Resume' href='/' open='open' onClick={toggleModal} >
+                <MiniDrawerListItem text='Resume' href='#' open='open' onClick={toggleModal} >
                     <PictureAsPdfIcon />
                 </MiniDrawerListItem>
                 <MiniDrawerListItem text='Tableau' href={about.social.tableau} open='open' >
