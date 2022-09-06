@@ -13,7 +13,7 @@ const MiniProfileIcon = () => {
       window.addEventListener('scroll', toggleVisibility)
       return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
-  console.log(isVisible);
+
   return isVisible ? (
     <MiniDrawerListItem text='Home' href='#' open='open' >
         <Avatar alt='Peter Harmazinski' src={ProfilePicture} style={{ height: '24px', width: '24px' }} />

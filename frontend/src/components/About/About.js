@@ -15,7 +15,7 @@ const About = ({modalOpen, toggleModal}) => {
   const { name, role, description, resume, social } = about
 
   return (
-    <div className='about' style={{padding: '150px 0 0 0'}}>
+    <div className='about' style={{padding: '5vw 0 0 0'}}>
       <div className='div1'>
       {name && (
         <Typography variant='h1' className='center hero parent' style={{ whiteSpace: 'pre' }}>
@@ -34,11 +34,9 @@ const About = ({modalOpen, toggleModal}) => {
           Connect&nbsp;<span className='about--secondary-text'> on LinkedIn</span>
         </Button>
 
-        {resume && (
-          <Button startIcon={<PictureAsPdfIcon />} onClick={() => toggleModal()} variant='outlined' type='button' className='link--icon'>
-            Resume
-          </Button>
-        )}
+        <Button startIcon={<PictureAsPdfIcon />} onClick={() => toggleModal()} variant='outlined' type='button' className='link--icon'>
+          Resume
+        </Button>
 
         <Button variant='outlined' href={social.tableau} aria-label='tableau' className='link--icon about--secondary-icon'
           startIcon={<SvgIcon viewBox='0 0 31 31'>
