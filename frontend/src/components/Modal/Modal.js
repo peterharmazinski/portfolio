@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import MuiModal from '@mui/material/Modal';
-import Resume from '../../Resume-Web.pdf';
+import Resume from '../../PeterHarmazinskiResume-Web.pdf';
 
 const Modal = ({modalOpen, toggleModal}) => {
 
