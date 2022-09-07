@@ -129,7 +129,7 @@ section {
 @media (max-width: 650px) {
   .about .div1 {
     max-width: 90vw;
-    margin: 0 1vw;
+    margin: 5vw 1vw 0 1vw;
     padding-left: 7vw;
   }
 
