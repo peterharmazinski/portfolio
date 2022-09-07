@@ -59,7 +59,7 @@ export default function MiniDrawer({logo, modalOpen, toggleModal}) {
       <PermanentDrawer drawerWidth={drawerWidth} open={open} handleDrawerOpen={handleDrawerOpen} handleDrawerClose={handleDrawerClose} DrawerHeader={DrawerHeader}>
         <MiniDrawerList modalOpen={modalOpen} toggleModal={toggleModal}/>
       </PermanentDrawer>
-      <AppBar position="static" open={open} elevation={0} color='transparent' sx={{m: 0, minHeight: '64px'}}>
+      <AppBar position="fixed" open={open} elevation={0} sx={{bgcolor: 'background.default', m: 0, minHeight: '64px', zIndex: 1}}>
         <Toolbar>
         <IconButton
          
@@ -77,7 +77,7 @@ export default function MiniDrawer({logo, modalOpen, toggleModal}) {
        >
          <MenuIcon  />
        </IconButton>
-          <Typography variant='h4' component='div' sx={{ flexGrow: 1 }}  color='primary' className='logo'>
+          <Typography variant='h4' component='div' sx={{ flexGrow: 1, marginLeft: '75px' }}  color='primary' className='logo'>
               {logo}
             </Typography>
         </Toolbar>

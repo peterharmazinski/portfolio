@@ -26,7 +26,8 @@ export function CustomThemeProvider({ children }) {
                 // palette values for light mode
                 
                 background: {
-                  default: '#ededed'
+                  default: '#ededed',
+                  secondary: '#ffffff'
                 },
                 text: {
                   default: 'black'

@@ -1,6 +1,5 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
   logo: 'PH',
 }
 
@@ -9,7 +8,7 @@ const about = {
   name: 'Peter Harmazinski',
   role: 'Data Visualization, Analytics, and Web Developer',
   description:
-    "I gather, transform, and visualize data into consumable information to empower users to make data-driven decisions with minimal user effort. To translate: <b>I make people's lives easier with data.</b> I'm always looking to improve, help people, and provide a fantastic user experience.",
+    "<b>I make people's lives easier with data</b> by gathering, transforming, and visualizing data into consumable information to empower users to make data-driven decisions while minimizing user effort. I'm always looking to improve, help people, and provide a fantastic user experience.",
   social: {
     linkedin: 'https://www.linkedin.com/in/peterharmazinski/',
     github: 'https://github.com/peterharmazinski',

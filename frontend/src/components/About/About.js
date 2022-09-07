@@ -59,7 +59,7 @@ const About = ({modalOpen, toggleModal}) => {
       </div>
       </div>
       <div className='div2' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
-      <Avatar id='hero-image' alt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: 'calc(100px + 15vw)', width: 'calc(100px + 15vw)' }} />
+        <Avatar id='hero-image' alt='Peter Harmazinski' src={ProfilePicture} sx={{ boxShadow: 3 }} style={{ height: 'calc(100px + 15vw)', width: 'calc(100px + 15vw)', marginRight: '200px' }} />
       </div>
     </div>
   )
