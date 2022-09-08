@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.95c5d870.css",
-    "main.js": "/static/js/main.57800d76.js",
-    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/profile_picture.jpg": "/static/media/profile_picture.d551de8e6bb7d734c2af.jpg",
-    "static/media/starry_night_preview.png": "/static/media/starry_night_preview.115aac1af1e36f02edec.png",
-    "static/media/foreign-refugees.png": "/static/media/foreign-refugees.0f44fc0b8a2d9522d15c.png",
-    "static/media/PeterHarmazinskiResume-Web.pdf": "/static/media/PeterHarmazinskiResume-Web.fdf2665b8a99b4a62b3c.pdf",
-    "static/media/customer_churn_preview.png": "/static/media/customer_churn_preview.9aaf337102f2e892e8c1.png",
-    "static/media/fandango_preview.png": "/static/media/fandango_preview.a3a03cf9e98a9fb7e412.png",
-    "static/media/covid_twitter_sentiment_preview.png": "/static/media/covid_twitter_sentiment_preview.be054af261c84403d7b3.png",
-    "static/media/web_scrape_preview.png": "/static/media/web_scrape_preview.664e86639626a3dc1119.png",
-    "static/media/young_knight_preview.png": "/static/media/young_knight_preview.954a134f101e4907f8b2.png",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/tableau_logo_icon.svg": "/static/media/tableau_logo_icon.e52c423bb996b9653b87.svg",
-    "index.html": "/index.html",
-    "main.95c5d870.css.map": "/static/css/main.95c5d870.css.map",
-    "main.57800d76.js.map": "/static/js/main.57800d76.js.map",
-    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "https://pharmazinski.pythonanywhere.com/static/css/main.95c5d870.css",
+    "main.js": "https://pharmazinski.pythonanywhere.com/static/js/main.a386a525.js",
+    "static/js/787.cda612ba.chunk.js": "https://pharmazinski.pythonanywhere.com/static/js/787.cda612ba.chunk.js",
+    "static/media/profile_picture.jpg": "https://pharmazinski.pythonanywhere.com/static/media/profile_picture.d551de8e6bb7d734c2af.jpg",
+    "static/media/starry_night_preview.png": "https://pharmazinski.pythonanywhere.com/static/media/starry_night_preview.115aac1af1e36f02edec.png",
+    "static/media/foreign-refugees.png": "https://pharmazinski.pythonanywhere.com/static/media/foreign-refugees.0f44fc0b8a2d9522d15c.png",
+    "static/media/PeterHarmazinskiResume-Web.pdf": "https://pharmazinski.pythonanywhere.com/static/media/PeterHarmazinskiResume-Web.fdf2665b8a99b4a62b3c.pdf",
+    "static/media/customer_churn_preview.png": "https://pharmazinski.pythonanywhere.com/static/media/customer_churn_preview.9aaf337102f2e892e8c1.png",
+    "static/media/fandango_preview.png": "https://pharmazinski.pythonanywhere.com/static/media/fandango_preview.a3a03cf9e98a9fb7e412.png",
+    "static/media/covid_twitter_sentiment_preview.png": "https://pharmazinski.pythonanywhere.com/static/media/covid_twitter_sentiment_preview.be054af261c84403d7b3.png",
+    "static/media/web_scrape_preview.png": "https://pharmazinski.pythonanywhere.com/static/media/web_scrape_preview.664e86639626a3dc1119.png",
+    "static/media/young_knight_preview.png": "https://pharmazinski.pythonanywhere.com/static/media/young_knight_preview.954a134f101e4907f8b2.png",
+    "static/media/logo.svg": "https://pharmazinski.pythonanywhere.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "https://pharmazinski.pythonanywhere.com/index.html",
+    "static/media/tableau_logo_icon.svg": "https://pharmazinski.pythonanywhere.com/static/media/tableau_logo_icon.e52c423bb996b9653b87.svg",
+    "main.95c5d870.css.map": "https://pharmazinski.pythonanywhere.com/static/css/main.95c5d870.css.map",
+    "main.a386a525.js.map": "https://pharmazinski.pythonanywhere.com/static/js/main.a386a525.js.map",
+    "787.cda612ba.chunk.js.map": "https://pharmazinski.pythonanywhere.com/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95c5d870.css",
-    "static/js/main.57800d76.js"
+    "static/js/main.a386a525.js"
   ]
 }
